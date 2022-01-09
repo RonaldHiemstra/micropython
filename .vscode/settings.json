@@ -1,0 +1,70 @@
+{
+    "cSpell.language": "en",
+    "cSpell.words": [
+      "aadc",
+      "asyncio",
+      "atten",
+      "capsys",
+      "conda",
+      "esptool",
+      "hexlify",
+      "ifconfig",
+      "isconnected",
+      "leds",
+      "micropython",
+      "mpfshell",
+      "mqtt",
+      "ntptime",
+      "oled",
+      "osdebug",
+      "Popen",
+      "pytest",
+      "uasyncio",
+      "ubinascii",
+      "umqtt",
+      "webrepl",
+      "WLAN"
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      132
+    ],
+    "python.analysis.extraPaths": [
+      "../github/micropython-stubs/stubs/cpython_core",
+      "../github/micropython-stubs/stubs/micropython-1_17-frozen/esp32/GENERIC",
+      "../github/micropython-stubs/stubs/micropython-esp32-1_17",
+      "../github/ads1x15",
+      "../github/micropython-async/v3/",
+      "../github/micropython-mqtt",
+      "../picoweb",
+      "./clock",
+      "./lib"
+    ],
+    "python.defaultInterpreterPath": "${env.HOME}/.conda/envs/mpydev/python.exe",
+    "python.formatting.autopep8Args": [
+      "--max-line-length=132"
+    ],
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pycodestyleArgs": [
+      "--max-line-length=132"
+    ],
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.extend([\"\"c:\\\\Users\\\\hiems\\\\.vscode\\\\extensions\\\\ms-python.devicesimulatorexpress-2020.0.36321\\\\out\"\",\"\"c:\\\\Users\\\\hiems\\\\.vscode\\\\extensions\\\\ms-python.devicesimulatorexpress-2020.0.36321\\\\out\\\\micropython\"\",\"\"c:\\\\Users\\\\hiems\\\\.vscode\\\\extensions\\\\ms-python.devicesimulatorexpress-2020.0.36321\\\\out\\\\clue\"\",\"\"c:\\\\Users\\\\hiems\\\\.vscode\\\\extensions\\\\ms-python.devicesimulatorexpress-2020.0.36321\\\\out\\\\base_circuitpython\"\"])"
+    ],
+    "python.linting.pylintEnabled": true,
+    "terminal.integrated.defaultProfile.windows": "micropython",
+    "python.testing.pytestArgs": [
+      "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "-workbench.action.quickOpenView"
+    ]
+  }

@@ -1,0 +1,9 @@
+# Files to be uploaded to the target device.
+#
+# Format to upload a file to the target device:
+# <file> <destination_folder>
+#
+# Referencing another lst file containing files to upload:
+# <file>
+
+../../github/micropython-async/v3/as_demos/rate.py test
