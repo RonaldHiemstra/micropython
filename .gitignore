@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# private configuration files
+system_config.json
+webrepl_cfg.py
