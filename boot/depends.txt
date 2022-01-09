@@ -1,0 +1,5 @@
+# files to be uploaded to the target
+# Format:
+# file destination_folder
+boot.py .
+../lib/config.py .

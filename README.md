@@ -73,10 +73,10 @@ mpfshell -n -c "open COM5; repl"
     <http://micropython.org/webrepl/#the.esp.ip.address:8266>
 
 * Copy all files in /boot to the ESP
-* Create the file `system_config.json` with the initial configuration:
+* Create the file `network_config.json` with the initial configuration:
 
     ```python
-    open('system_config.json').write('{"ssid": "%s", "__password": "%s"}' % (input('ssid: '), input('password: ')))
+    open('network_config.json').write('{"ssid": "%s", "__password": "%s"}' % (input('ssid: '), input('password: ')))
     ```
 
 * Reset the ESP :) `Ctrl-d`
@@ -87,30 +87,5 @@ mpfshell -n -c "open COM5; repl"
 
 ## Projects
 
-### Magic Clock
-
-Show distance to work on the clock (only if I am at home)
-
-```yaml
-data_template:
-  payload: "{{ states(sensor.ronald2work) }}"
-  topic: distance/ronald/work
-service: mqtt.publish
-```
-
-Not sure yet if this code work
-
-```yaml
-- id: '1558647997872'
-  alias: send travel time to work to MQTT server
-  trigger:
-  - entity_id: sensor.ronald2work
-    platform: state
-  condition: []
-  action:
-  - data:
-      payload_template: '{% if is_state(''person.ronald_hiemstra'', ''home'') and
-        now().isoweekday() <= 5 and now().hour >= 6 and now().hour < 9 %} {{ states.sensor.ronald2work.state }} {%else%} 0 {%endif%}'
-      topic: distance/ronald/work
-    service: mqtt.publish
-```
+* [magic_clock](magic_clock/readme.md)
+* [ambient](ambient/readme.md)

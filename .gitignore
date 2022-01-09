@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # private configuration files
-system_config.json
+network_config.json
 webrepl_cfg.py
